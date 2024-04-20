@@ -14,7 +14,7 @@ let admin = name;
 Создайте переменную для названия нашей планеты. Как бы вы её назвали?
 Создайте переменную для хранения имени текущего посетителя сайта. Как бы вы назвали такую переменную?*/
 
-const myPlanetName = 'earls' ;
+const myPlanetName = 'earls';
 const currentUserName = "client";
 
 const BIRTHDAY = '18.04.1982'; // использовать заглавные буквы?
@@ -32,7 +32,7 @@ let num = 125;
 
 // boolean 
 string = null
-let answer = (5==5)
+let answer = (5 == 5)
 
 // null  
 let n = null
@@ -41,9 +41,9 @@ let un = undefined;
 
 // узнать какойй тип данный
 let answer1 = typeof n; //object
-let answer2 = typeof(un); //undefined
-let answer3 = typeof(name); //string
-let answer4= typeof num; //number
+let answer2 = typeof (un); //undefined
+let answer3 = typeof (name); //string
+let answer4 = typeof num; //number
 let name1 = "Ilya";
 // example
 // alert( `hello ${1}` ); // ?
@@ -63,7 +63,7 @@ let name1 = "Ilya";
 // Преобразование типов
 
 // Преобразование boolean on string
-let value  = true
+let value = true
 // alert(typeof value);
 // value = String(value);
 
@@ -79,7 +79,7 @@ answer = mum / mum / text // number
 answer = mum * mum + text // string
 answer = mum * mum * text // number
 answer = mum % mum * text // number
-num = "  5 "; 
+num = "  5 ";
 answer = num + num //string
 answer = num * num //number
 answer = num / num //number
@@ -87,16 +87,16 @@ answer = num % num //number
 answer = ++num //number
 answer = num++ //number
 answer = ++num //number 7
-num = undefined 
+num = undefined
 answer = num++ // NaN
-num = "0" 
+num = "0"
 answer = num++ // number 0
-answer = num*num // number 1
+answer = num * num // number 1
 answer = num / num // number 1
-num = " " 
+num = " "
 answer = num; //string
-answer = num==true // boolean false
-answer = num==false // boolean true
+answer = num == true // boolean false
+answer = num == false // boolean true
 
 
 //Базовые операторы, математика
@@ -123,12 +123,12 @@ answer = num==false // boolean true
 Возведение в степень **.
 */
 num = 5;
-answer= num % 2 //остаток
-answer= num ** 2 //степень 25
-answer= num ** 5 //степень 3125
+answer = num % 2 //остаток
+answer = num ** 2 //степень 25
+answer = num ** 5 //степень 3125
 text = "hello"
 
-answer= text + ' world' //cсложение 
+answer = text + ' world' //cсложение 
 
 num = '5';
 answer = num + '2';  // 52
@@ -185,18 +185,62 @@ counter1--;        // работает как counter1 = counter1 - 1, прос�
 // ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( >>> )
 
 num = 5
-answer = num&1; // number 1
+answer = num & 1; // number 1
 answer = num | 1; // number 5
 answer = num ^ 1; // number 4
-answer = num  ==  5; // boolean true
-answer = num  ==  ~5; // boolean false
-answer = num  << 5; // number  100
-answer = num  >> 5; // number  0
-answer = num  >>> 5; // number  0
+answer = num == 5; // boolean true
+answer = num == ~5; // boolean false
+answer = num << 5; // number  100
+answer = num >> 5; // number  0
+answer = num >>> 5; // number  0
 
-num1 = 5 , 6 + 7 ; // work
-"use strict"
-num1 = 5 , 6 + 7 ; // nor work
-answer = num1 ; // number  0
-console.log(typeof answer);
-console.log(answer);
+// num1 = 5 , 6 + 7 ; // work
+// "use strict"
+// num1 = 5 , 6 + 7 ; // nor work
+// answer = num1 ; // number  0
+
+// num = char(num)
+// console.log(typeof answer);
+// console.log(char 5 );
+
+//Условное ветвление: if, '?'
+let num10 = 5
+let num100 = 5
+function try1(num10, num100) {
+    if (num10 == num100) {
+        // console.log("они равно");
+        answer ='они равно'
+    } else {
+        answer ='не равно'
+        // console.log("не равно");
+    }
+    console.log(answer);
+}
+// улучшение  кода м v1,1
+
+function try2(num10, num100) {
+    if (num10 == num100) answer ='они равно'
+    else  answer ='не равно'
+    console.log(answer);
+}
+// v 1.2
+function try3(num10, num100) {
+    answer= (num10 == num100)? 'они равно' : answer ='не равно';
+    console.log(answer);
+}
+// v1.3
+let try4 = (num10, num100) => (num10 == num100 ) ? 'равно' : 'не равно';
+num10 = 5;
+num100 = 55;
+let try5 = (num10 == num100 ) ? 'равно': (num10 < num100 ) ? `${num10} меньше чем ${num10}` : (num10 > num100 ) ? ` ${num10} больше чем ${num100}` : 'не равно';
+// v1.4
+let try6 = (num10, num100) =>{
+
+     return (num10 == num100 ) ? 'равно': (num10 < num100 ) ? `${num10} меньше чем ${num10}` : (num10 > num100 ) ? ` ${num10} больше чем ${num100}` : 'не равно';
+    //  console.log(test);
+}
+
+    console.log(try6(10,10));
+
+
+
