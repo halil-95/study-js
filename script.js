@@ -57,4 +57,46 @@ let name1 = "Ilya";
 // let namecon = prompt('what is your name');
 // let namecon = confirm('what is your name');
 
-alert(`привет ${namecon ? namecon: "no name" } как дела `);
+// alert(`привет ${namecon ? namecon: "no name" } как дела `);
+
+
+// Преобразование типов
+
+// Преобразование boolean on string
+let value  = true
+// alert(typeof value);
+// value = String(value);
+
+// числы
+let mum = "5"
+let text = "hello"
+answer = mum + mum // string
+answer = mum - mum // number
+answer = mum / mum // number
+answer = mum * mum // number
+answer = mum + mum + text // string
+answer = mum / mum / text // number
+answer = mum * mum + text // string
+answer = mum * mum * text // number
+answer = mum % mum * text // number
+num = "  5 "; 
+answer = num + num //string
+answer = num * num //number
+answer = num / num //number
+answer = num % num //number
+answer = ++num //number
+answer = num++ //number
+answer = ++num //number 7
+num = undefined 
+answer = num++ // NaN
+num = "0" 
+answer = num++ // number 0
+answer = num*num // number 1
+answer = num / num // number 1
+num = " " 
+answer = num; //string
+answer = num==true // boolean false
+answer = num==false // boolean true
+
+console.log(typeof answer);
+console.log(answer);
