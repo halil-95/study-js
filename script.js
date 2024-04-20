@@ -166,14 +166,37 @@ n1 *= 2; // теперь n1 = 14 (работает как n1 = n1 * 2)
 // Инкремент ++ увеличивает переменную на 1:
 let counter = 2;
 counter++;        // работает как counter = counter + 1, просто запись короче
-alert( counter ); // 3
+// alert( counter ); // 3
 
 // Декремент -- уменьшает переменную на 1:
 let counter1 = 2;
 counter1--;        // работает как counter1 = counter1 - 1, просто запись короче
-alert( counter1 ); // 1
+// alert( counter1 ); // 1
 /*/Инкремент/декремент можно применить только к переменной. Попытка использовать его на значении, типа 5++, приведёт к ошибке. */
 
-alert( n ); // 14
+
+// Побитовые операторы
+// AND(и) ( & )
+// OR(или) ( | )
+// XOR(побитовое исключающее или) ( ^ )
+// NOT(не) ( ~ )
+// LEFT SHIFT(левый сдвиг) ( << )
+// RIGHT SHIFT(правый сдвиг) ( >> )
+// ZERO-FILL RIGHT SHIFT(правый сдвиг с заполнением нулями) ( >>> )
+
+num = 5
+answer = num&1; // number 1
+answer = num | 1; // number 5
+answer = num ^ 1; // number 4
+answer = num  ==  5; // boolean true
+answer = num  ==  ~5; // boolean false
+answer = num  << 5; // number  100
+answer = num  >> 5; // number  0
+answer = num  >>> 5; // number  0
+
+num1 = 5 , 6 + 7 ; // work
+"use strict"
+num1 = 5 , 6 + 7 ; // nor work
+answer = num1 ; // number  0
 console.log(typeof answer);
 console.log(answer);
