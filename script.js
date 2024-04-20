@@ -46,7 +46,15 @@ let answer3 = typeof(name); //string
 let answer4= typeof num; //number
 let name1 = "Ilya";
 // example
-alert( `hello ${1}` ); // ?
-alert( `hello ${"name"}` ); // ?
-alert( `hello ${name}` ); // ?
-console.log(answer1);
+// alert( `hello ${1}` ); // ?
+// alert( `hello ${"name"}` ); // ?
+// alert( `hello ${name}` ); // ?
+// console.log(alert(hello));
+// confirm('bay');
+// prompt("world");
+
+
+// let namecon = prompt('what is your name');
+// let namecon = confirm('what is your name');
+
+alert(`привет ${namecon ? namecon: "no name" } как дела `);
