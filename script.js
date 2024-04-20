@@ -240,7 +240,15 @@ let try6 = (num10, num100) =>{
     //  console.log(test);
 }
 
-    console.log(try6(10,10));
+
+// Логические операторы
+let greeting = "Привет"; // строка непустая, поэтому будет преобразована к логическому значению true оператором &&=
+greeting ||= greeting + ", пользователь!"; // то же самое, что true && (greeting = greeting + "...")
+
+    // console.log(greeting);
+
+ 
+
 
 
 
